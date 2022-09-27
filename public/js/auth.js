@@ -36,7 +36,7 @@ myForm.addEventListener("submit", async(ev) => {
 
 function handleCredentialResponse(response) {
   const body = { id_token: response.credential };
-  fetch(`${url}google`, {
+  fetch(url+ 'google', {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
