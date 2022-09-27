@@ -2,7 +2,7 @@ const myForm = document.querySelector("form");
 
 let url = window.location.hostname.includes("localhost")
   ? "http://localhost:8080/api/auth/"
-  : "https://rest-server-express-tony.herokuapp.com/api/auth/";
+  : "https://tonymessenger.herokuapp.com/api/auth/";
 
 console.log(url);
 

@@ -1,6 +1,6 @@
 let url = window.location.hostname.includes("localhost")
   ? "http://localhost:8080/api/auth/"
-  : "https://rest-server-express-tony.herokuapp.com/api/auth/";
+  : "https://tonymessenger.herokuapp.com/api/auth/";
 
 //HTML refers
 const txtUid = document.querySelector('#txtUid');
