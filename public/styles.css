@@ -1,0 +1,36 @@
+h3{
+    color: rgb(100, 8, 8);
+}
+
+.div-filters{
+    display: flex;
+    flex-direction: row;
+}
+
+#selects{
+    width: 40rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-right: 20px;
+}
+
+#form-search{
+    width: 30rem;
+}
+
+#input-limit{
+    margin-right: 20px;
+    border: 1px rgb(186, 200, 204) solid;
+    width: 10rem;
+    padding-left: 10px;
+}
+
+#select-status{
+    margin-right: 20px;
+    width: 10rem;
+}
+
+#select-role{
+    width: 10rem;
+}

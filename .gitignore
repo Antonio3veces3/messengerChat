@@ -1,0 +1,9 @@
+node_modules/
+
+.env
+
+uploads/products/*
+!uploads/products/readme.md
+
+uploads/users/**.*
+!uploads/users/readme.md
