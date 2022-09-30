@@ -20,6 +20,9 @@
 }
 
 @media (max-width: 580px){
+    #divMessages{
+        height: 23rem;
+    }
     #sideBar{
         width: 8rem;
     }
@@ -32,7 +35,6 @@
     }
     #send-msg{
         width: 100%;
-        background-color: #F5F5F5;
     }
     #textMsg{
         width: 170%;
