@@ -24,6 +24,8 @@
         height: 23rem;
     }
     #sideBar{
+        margin-top: 15px;
+        margin-left: 20px;
         width: 8rem;
     }
     #ulUsers{
@@ -50,7 +52,14 @@
     }
     #userItem{
         border-bottom: 0.3px rgb(201, 198, 198) solid;
-
     }
+    #divChat{
+        margin-top: 2rem;
+    }
+    h3{
+        margin-top: 15px;
+        font-size: 20px;
+    }
+    
     
 }

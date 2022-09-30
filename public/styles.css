@@ -1,10 +1,11 @@
 .container {
     margin-top: 50px;
-    max-width: 40%;
+    max-width: 65%;
     text-align: center;
     align-items: center;
     align-content: center;
     border-radius: 8px;
+    background-color: rgb(248, 255, 255);
 }
 
 #divLogin{
@@ -12,6 +13,6 @@
     padding-bottom: 20px;
 }
 
-#g_id_signin{
-    width: 100%;
+.google{
+    align-items: center;
 }
