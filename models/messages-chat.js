@@ -15,7 +15,7 @@ class ChatMessage {
     get ultimos10(){
         let ultimosMsg= [];
         this.messages.forEach((msg,index) => {
-            if(index < 10){
+            if(index < 200){
                 ultimosMsg.push(msg)
             }
         })
