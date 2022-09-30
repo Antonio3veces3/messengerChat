@@ -84,10 +84,10 @@ const printActiveUsers = (users = [])=>{
     let usersHTML = '';
     users.forEach( ({name, uid }) => {
         usersHTML  += ` 
-            <li>
+            <li id="userItem">
                 <p>
                     <h5 class="text-success">${name} </h5>
-                    <span class="fs-6 text-muted">${uid}</span>
+                    <span class="text-muted" id="uid">${uid}</span>
                 </p>
             </li>
         `;

@@ -7,9 +7,9 @@
     padding: 15px;
     width: 100%;
     height: 25rem;
-    background-color: #F5F5F5;
     overflow-y: scroll;
     border-radius: 6px;
+    background-color: #F5F5F5;
 }
 #ulMessages{
     width: 100%;
@@ -17,4 +17,38 @@
 
 #textMsg{
     max-lines: 3;
+}
+
+@media (max-width: 580px){
+    #sideBar{
+        width: 8rem;
+    }
+    #ulUsers{
+        width: 100%;
+    }
+
+    #chat{
+        width: 63%;
+    }
+    #send-msg{
+        width: 100%;
+        background-color: #F5F5F5;
+    }
+    #textMsg{
+        width: 170%;
+    }
+    #btnSend{
+        margin-left: 55%;
+    }
+    li, h5{
+        font-size: 15px;
+    }
+    #uid{
+        font-size: 10px;
+    }
+    #userItem{
+        border-bottom: 0.3px rgb(201, 198, 198) solid;
+
+    }
+    
 }
