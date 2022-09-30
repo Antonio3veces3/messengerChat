@@ -8,6 +8,7 @@ const textMsg = document.querySelector('#textMsg');
 const ulUsers = document.querySelector('#ulUsers');
 const ulMessages = document.querySelector('#ulMessages');
 const logout = document.getElementById('btnLogout');
+const btnSend = document.getElementById('btnSend');
 
 let user = null, socket = null;
 
@@ -97,12 +98,14 @@ const printActiveUsers = (users = [])=>{
 
 const printMessages = (messages= [])=>{
     let messagesHTML = '';
-    messages.forEach( ({name, message }) => {
+    let allMessages= messages.reverse();
+    console.log(allMessages);
+    allMessages.forEach( ({name, message }) => {
         messagesHTML  += ` 
             <li>
                 <p>
                     <span class="text-primary">${name}: </span>
-                    <span >${message}</span>
+                    <span id="txtMessage">${message}</span>
                 </p>
             </li>
         `;
@@ -124,11 +127,11 @@ const printPrivateMessage = ({from, message} )=>{
     ulMessages.innerHTML += privateMessageHTML;
 }
 
-textMsg.addEventListener('keyup', ({keyCode})=>{
-    if(keyCode !== 13){return; }
+btnSend.addEventListener('click', async()=>{
     const message = textMsg.value;
     const uid = txtUid.value;
-    if(message.length === 0 || message == ' '){return;}
+    if(message.length === 0 || message.trim() == ""){
+        return;}
     textMsg.value= '';
 
     socket.emit('send-msg', {message, uid});
